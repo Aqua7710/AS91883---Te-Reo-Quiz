@@ -371,10 +371,10 @@ if (selection == 2)
             break;
     }
     // question 2, intermediate
-    Console.WriteLine("Question 2) How do you say 'ocean' in Māori?");
-    Console.WriteLine("\n\n1 = whenua" + "\n\n2 = rakau" + "\n\n3 = moana" + "\n\n4 = rangi");
+    Console.WriteLine("Question 2) True or false, 'I am going' is 'kei te haere ahau' in Māori?");
+    Console.WriteLine("\n\n1 = True" + "\n\n2 = False");
     Console.Write("\nYour answer = ");
-    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 3)
     {
         Console.Write("\nPlease only enter a valid number option: ");
     }
@@ -382,19 +382,11 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
-            break;
-
-        case 2:
-            Console.WriteLine("\nIncorrect!");
-            break;
-
-        case 3:
             Console.WriteLine("\nCorrect!");
             ++score;
             break;
 
-        case 4:
+        case 2:
             Console.WriteLine("\nIncorrect!");
             break;
     }
@@ -411,10 +403,3 @@ else
 
    
 
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Cont
