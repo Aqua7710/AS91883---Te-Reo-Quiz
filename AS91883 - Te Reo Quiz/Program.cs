@@ -27,6 +27,7 @@ switch (selection)
         break;
 }
 int beginnerQuiz, score = 0;
+string I = "Incorrect!", C = "Correct!";
 
 // beginner quiz
 
@@ -46,20 +47,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 2, beginner
@@ -73,20 +74,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 3, beginner
@@ -101,15 +102,15 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
     }
@@ -124,20 +125,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 5, beginner
@@ -151,20 +152,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 6, beginner
@@ -184,7 +185,7 @@ if (selection == 1)
             break;
 
         case 2:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
     }
@@ -199,20 +200,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 8, beginner
@@ -226,19 +227,19 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
     }
@@ -253,20 +254,20 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 10, beginner
@@ -280,19 +281,19 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 4:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
     }
@@ -330,7 +331,7 @@ if (selection == 1)
             break;
 
         case 2:
-            Console.WriteLine("\nThank you for particapating in this quiz"); // end message
+            Console.WriteLine("\n\n\nThank you for particapating in this quiz!\n\n-------------------------------------------------------------"); // end message
             break;
     }
 }
@@ -354,24 +355,24 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
 
         case 3:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
             break;
     }
     // question 2, intermediate
-    Console.WriteLine("Question 2) True or false, 'I am going' is 'kei te haere ahau' in Māori?");
+    Console.WriteLine("\n\nQuestion 2) True or false, 'I am going' is 'kei te haere ahau' in Māori?");
     Console.WriteLine("\n\n1 = True" + "\n\n2 = False");
     Console.Write("\nYour answer = ");
     while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 3)
@@ -382,19 +383,123 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
-            Console.WriteLine("\nCorrect!");
+            Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
-            Console.WriteLine("\nIncorrect!");
+            Console.WriteLine(I);
+            break;
+    }
+    // question 3, intermediate
+    Console.WriteLine("\n\nQuestion 3) What is 'He pai ahau' in english?");
+    Console.WriteLine("\n\n1 = I am tall" + "\n\n2 = You are short" + "\n\n3 = They are fun" + "\n\n4 = I am good");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
+            Console.WriteLine(C);
+            ++score;
+            break;
+    }
+    // question 4, intermediate
+    Console.WriteLine("\n\nQuestion 4) How do you say 'house' in Māori?");
+    Console.WriteLine("\n\n1 = rorohiko" + "\n\n2 = whare" + "\n\n3 = teneti" + "\n\n4 = hotera");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(C);
+            break;
+
+        case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
+            Console.WriteLine(I);
+            ++score;
+            break;
+    }
+    // question 5, intermediate
+    Console.WriteLine("\n\nQuestion 5) What is the correct order of 8, 9, 10 in Māori?");
+    Console.WriteLine("\n\n1 = ono, waru, iwa" + "\n\n2 = iwa, tahi, rua" + "\n\n3 = waru, iwa, tekau");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 4)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(C);
+            ++score;
+            break;
+    }
+    // question 6, intermediate
+    Console.WriteLine("\n\nQuestion 6) What is the correct order of 8, 9, 10 in Māori?");
+    Console.WriteLine("\n\n1 = ono, waru, iwa" + "\n\n2 = iwa, tahi, rua" + "\n\n3 = waru, iwa, tekau");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 4)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(C);
+            ++score;
             break;
     }
 }
 
 // advance quiz
 
-else
+if (selection == 3)
 {
     Console.WriteLine("advanced");
 }
