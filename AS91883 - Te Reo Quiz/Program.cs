@@ -38,7 +38,7 @@ if (selection == 1)
     // question 1, beginner
     Console.WriteLine("Question 1) How do you say 'Hello' in Māori?");
     Console.WriteLine("\n\n1 = kia ngahau" + "\n\n2 = whakakatakata" + "\n\n3 = Kia Ora" + "\n\n4 = po pai");
-    Console.Write("\nYour answer = ");
+    Console.Write("\nYour answer (select an answer by typing the number next to the option you pick and then press enter) = ");
     while (!int.TryParse(Console.ReadLine(), out beginnerQuiz) || beginnerQuiz <= 0 || beginnerQuiz >= 5)
     {
         Console.Write("\nPlease only enter a valid number option: ");
@@ -346,7 +346,7 @@ if (selection == 2)
     // question 1, intermediate
     Console.WriteLine("Question 1) How do you say 'ocean' in Māori?");
     Console.WriteLine("\n\n1 = whenua" + "\n\n2 = rakau" + "\n\n3 = moana" + "\n\n4 = rangi");
-    Console.Write("\nYour answer = ");
+    Console.Write("\nYour answer (select an answer by typing the number next to the option you pick and then press enter) = ");
     while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
     {
         Console.Write("\nPlease only enter a valid number option: ");
@@ -472,10 +472,69 @@ if (selection == 2)
             break;
     }
     // question 6, intermediate
-    Console.WriteLine("\n\nQuestion 6) What is the correct order of 8, 9, 10 in Māori?");
-    Console.WriteLine("\n\n1 = ono, waru, iwa" + "\n\n2 = iwa, tahi, rua" + "\n\n3 = waru, iwa, tekau");
+    Console.WriteLine("\n\nQuestion 6) What option is the correct Māori vowels?");
+    Console.WriteLine("\n\n1 = a, e, i, o, u" + "\n\n2 = a, e, i, o, u, p" + "\n\n3 = a, e, i, o, u, y" + "\n\n4 = a, e, i, o, u, t");
     Console.Write("\nYour answer = ");
-    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 4)
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+        case 2:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+        case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
+            Console.WriteLine(I);
+            break;
+
+    }
+    // question 7, intermediate
+    Console.WriteLine("\n\nQuestion 7) What is 'Kaumatu' in English?");
+    Console.WriteLine("\n\n1 = Elder" + "\n\n2 = Sister" + "\n\n3 = Brother" + "\n\n4 = Mother");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
+            Console.WriteLine(I);
+            break;
+
+    }
+    // question 8, intermediate
+    Console.WriteLine("\n\nQuestion 8) What is 'Auckland' in Māori?");
+    Console.WriteLine("\n\n1 = Ōtautahi" + "\n\n2 = Te Whanganui-a-Tara" + "\n\n3 = Aotearoa" + "\n\n4 = Tāmaki Makaurau");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
     {
         Console.Write("\nPlease only enter a valid number option: ");
     }
@@ -491,11 +550,104 @@ if (selection == 2)
             break;
 
         case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
             Console.WriteLine(C);
             ++score;
             break;
+
+    }
+    // question 9, intermediate
+    Console.WriteLine("\n\nQuestion 9) Which number is bigger in Māori, 'rima tekau' or 'rima tekau ma ono'?");
+    Console.WriteLine("\n\n1 = rima tekau" + "\n\n2 = rima tekau ma ono");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 3)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+    }
+    // question 10, intermediate
+    Console.WriteLine("\n\nQuestion 10) Which number is 'learning' in Māori?");
+    Console.WriteLine("\n\n1 = rorohiko" + "\n\n2 = whare pukapuka" + "\n\n3 = whakaako" + "\n\n4 = ako");
+    Console.Write("\nYour answer = ");
+    while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (intermediateQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(I);
+            break;
+
+        case 4:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+    }
+    // finish intermediate quiz
+    Console.WriteLine("\n\n\nCongratulations! You have completed the intermediate level Te Reo Māori quiz!");
+    // display different result depending on score
+    if (score <= 3)
+    {
+        Console.WriteLine($"\n\nYou got {score}/10. Good try, but you need more practice.");
+    }
+    else if (score <= 7)
+    {
+        Console.WriteLine($"\n\nYou got {score}/10. You did good, practice a little bit more to aim for a higher score!");
+    }
+    else if (score <= 9)
+    {
+        Console.WriteLine($"\n\nYou got {score}/10. SO CLOSE! Keep trying!");
+    }
+    else
+    {
+        Console.WriteLine($"\n\nYou got {score}/10. PERFECT SCORE!");
+    }
+    int reDo;   // variable for repeat
+
+    Console.Write("\n\nWould you like to take another quiz? Type '1' for Yes or type '2' for No = ");
+    while (!int.TryParse(Console.ReadLine(), out reDo) || reDo <= 0 || reDo >= 3)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+    switch (reDo)
+    {
+        case 1:
+            Console.Clear();
+            goto StartingPoint; // allows user to redo the quiz or pick another quiz
+            break;
+
+        case 2:
+            Console.WriteLine("\n\n\nThank you for particapating in this quiz!\n\n-------------------------------------------------------------"); // end message
+            break;
     }
 }
+
 
 // advance quiz
 
