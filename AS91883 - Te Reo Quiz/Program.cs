@@ -348,8 +348,8 @@ if (selection == 2)
     Console.WriteLine("\n\n1 = whenua" + "\n\n2 = rakau" + "\n\n3 = moana" + "\n\n4 = rangi");
     Console.Write("\nYour answer (select an answer by typing the number next to the option you pick and then press enter) = ");
     while (!int.TryParse(Console.ReadLine(), out intermediateQuiz) || intermediateQuiz <= 0 || intermediateQuiz >= 5)
-    {
-        Console.Write("\nPlease only enter a valid number option: ");
+    {   
+            Console.Write("\nPlease only enter a valid number option: ");       
     }
 
     switch (intermediateQuiz)
@@ -631,7 +631,8 @@ if (selection == 2)
     int reDo;   // variable for repeat
 
     Console.Write("\n\nWould you like to take another quiz? Type '1' for Yes or type '2' for No = ");
-    while (!int.TryParse(Console.ReadLine(), out reDo) || reDo <= 0 || reDo >= 3)
+    while (!int.TryParse(Console.ReadLine(), out reDo) || reDo <= 0 || reDo >
+        = 3)
     {
         Console.Write("\nPlease only enter a valid number option: ");
     }
@@ -649,11 +650,40 @@ if (selection == 2)
 }
 
 
-// advance quiz
+// advanced quiz
 
 if (selection == 3)
 {
-    Console.WriteLine("advanced");
+    Console.Clear(); // clears all the text that came before so that it's easier to focus
+
+    // question 1, advanced
+    Console.WriteLine("Question 1) How do you say 'Hello' in Māori?");
+    Console.WriteLine("\n\n1 = kia ngahau" + "\n\n2 = whakakatakata" + "\n\n3 = Kia Ora" + "\n\n4 = po pai");
+    Console.Write("\nYour answer (select an answer by typing the number next to the option you pick and then press enter) = ");
+    while (!int.TryParse(Console.ReadLine(), out beginnerQuiz) || beginnerQuiz <= 0 || beginnerQuiz >= 5)
+    {
+        Console.Write("\nPlease only enter a valid number option: ");
+    }
+
+    switch (beginnerQuiz)
+    {
+        case 1:
+            Console.WriteLine(I);
+            break;
+
+        case 2:
+            Console.WriteLine(I);
+            break;
+
+        case 3:
+            Console.WriteLine(C);
+            ++score;
+            break;
+
+        case 4:
+            Console.WriteLine(I);
+            break;
+    }
 }
 
 
