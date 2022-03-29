@@ -2,7 +2,7 @@
                //introduction 
 StartingPoint: // will bring user back to this point if they choose to at the end of the quiz
 Console.WriteLine("Kia Ora user! Welcome to this Te Reo Māori quiz.");
-Console.WriteLine("This quiz will test your Te Reo Māori knowlege by asking you 10 multichoice questions. After you answer these questions, the program will calculate and display your skill level.");
+Console.WriteLine("This quiz will test your Te Reo Māori knowlege by asking you 10 multichoice questions. You will only have one try to get the question right. After you answer these questions, the program will calculate and display your skill level.");
 
 //quiz level selector
 Console.WriteLine("\n\nDifficulty level:");
@@ -47,19 +47,24 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear();
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear();
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear();
             Console.WriteLine(C);
+            Console.Beep();
             ++score;
             break;
 
         case 4:
+            Console.Clear();
             Console.WriteLine(I);
             break;
     }
@@ -74,19 +79,23 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -102,14 +111,17 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear();
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -125,19 +137,23 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -152,19 +168,23 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -181,10 +201,12 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine("\nIncorrect! It means 'how are you'");
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -200,19 +222,23 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -227,18 +253,22 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -254,19 +284,23 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -281,19 +315,27 @@ if (selection == 1)
     switch (beginnerQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------"); // used to sperate the final correct/incorrect message from the final score
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
+            Console.WriteLine("---------------------------------------------------------");
             ++score;
             break;
     }
@@ -355,19 +397,23 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -383,11 +429,13 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -403,18 +451,22 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -431,18 +483,22 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             ++score;
             break;
@@ -459,14 +515,17 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -483,20 +542,24 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
@@ -513,19 +576,23 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
@@ -542,18 +609,22 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -571,10 +642,12 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -592,19 +665,27 @@ if (selection == 2)
     switch (intermediateQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------"); // used to sperate the final correct/incorrect message from the final score
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
+            Console.WriteLine("---------------------------------------------------------");
             ++score;
             break;
 
@@ -668,19 +749,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -696,18 +781,22 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -724,19 +813,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -752,10 +845,12 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
@@ -772,19 +867,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -800,19 +899,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -828,19 +931,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -856,15 +963,18 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -880,19 +990,23 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(C);
             ++score;
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
             break;
     }
@@ -908,20 +1022,28 @@ if (selection == 3)
     switch (advancedQuiz)
     {
         case 1:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------"); // used to sperate the final correct/incorrect message from the final score
             break;
 
         case 2:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
 
         case 3:
+            Console.Clear(); 
             Console.WriteLine(C);
+            Console.WriteLine("---------------------------------------------------------");
             ++score;
             break;
 
         case 4:
+            Console.Clear(); 
             Console.WriteLine(I);
+            Console.WriteLine("---------------------------------------------------------");
             break;
     }
     // finish advanced quiz
